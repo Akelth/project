@@ -1,2 +1,3 @@
 #!/bin/bash
-mkdir data logs openmeetings_data
+mkdir logs
+tar -xf data.tar.gz

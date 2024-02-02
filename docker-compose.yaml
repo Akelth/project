@@ -21,7 +21,6 @@ services:
       - 5443:5443
     volumes:
       - ./logs:/opt/openmeetings/logs
-      - ./openmeetings_data:/opt/omdata
     depends_on:
       - kurento
       - postgresql
