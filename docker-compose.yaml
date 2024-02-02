@@ -26,7 +26,7 @@ services:
       - postgresql
     networks:
       openmeetings-net:
-        ipv4_address: 192.168.1.149
+        #        ipv4_address: 192.168.1.149
     restart: always
 
   postgresql:
@@ -40,7 +40,7 @@ services:
       - POSTGRES_DB=openmeetings
     networks:
       openmeetings-net:
-        ipv4_address: 192.168.1.150
+        #        ipv4_address: 192.168.1.150
     restart: always
 
   kurento:
@@ -50,7 +50,7 @@ services:
       - "8888:8888"
     networks:
       openmeetings-net:
-        ipv4_address: 192.168.1.151
+        #        ipv4_address: 192.168.1.151
     restart: always
 
 networks:
@@ -63,3 +63,4 @@ networks:
       config:
         - subnet: "192.168.1.0/24"
           gateway: "192.168.1.1"
+          ip_range: "192.168.1.160/27"
